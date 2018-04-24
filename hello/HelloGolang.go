@@ -37,9 +37,9 @@ func retrieveJSONPlaceHolderJSON() {
 
 func main() {
 
-	name, age := greetKiannah()
+	floatVal := CalculateTax(50.0, 5.0)
 
-	println(name, age)
+	println(floatVal)
 
 }
 
@@ -74,4 +74,8 @@ func greetingsWithName(name string) string {
 
 func greetKiannah() (string, int) {
 	return "Kiannah", 38
+}
+
+func CalculateTax(salesTotal float64, taxRate float64) float64 {
+	return salesTotal * taxRate
 }
